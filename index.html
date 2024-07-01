@@ -23,7 +23,7 @@
           educação infantil Estrelas do Amanhã.
         </p>
         <form action="" method="post" enctype="multipart/form-data">
-          <fieldset>
+          <fieldset class="child-info">
             <legend>Informações da criança</legend>
             <div class="input-wrapper">
               <label for="fullname">Nome completo</label>
@@ -78,6 +78,57 @@
                   <br>
                   selecionar os arquivos
                 </p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="address">
+            <legend>Endereço residencial</legend>
+            <div class="input-wrapper">
+              <label for="cep">CEP</label>
+              <input 
+                type="text" 
+                id="cep"
+                name="cep"
+              >
+            </div>
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="street">Rua</label>
+                <input 
+                  type="text" 
+                  id="street"
+                  name="street"
+                  value="Rua das flores"
+                  disabled
+                >
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="number">Número</label>
+                <input 
+                  type="number" 
+                  id="number"
+                  name="number"
+                >
+              </div>
+            </div>
+            <div class="flex">
+              <div class="input-wrapper flex-2">
+                <label for="city">Cidade</label>
+                <input 
+                  type="text" 
+                  id="city"
+                  name="city"
+                  value="São Paulo"
+                  disabled
+                >
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="state">Estado</label>
+                <input 
+                  type="text" 
+                  id="state"
+                  name="state"
+                >
               </div>
             </div>
           </fieldset>
