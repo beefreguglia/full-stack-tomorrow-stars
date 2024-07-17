@@ -1,13 +1,11 @@
 #app {
   display: grid;
-  grid-template-columns: 51.25% 48.75%;
-  height: 100vh;
-  overflow: hidden;
+  grid-template-columns: 1fr;
 }
 
 main {
-  overflow: auto;
-  padding: 4rem;
+  padding: 1.5rem;
+  order: 2;
 
   & .main-container {
     max-width: 33rem;
@@ -45,5 +43,19 @@ aside {
     & span {
       color: var(--text-highlight);
     }
+  }
+}
+
+@media (width >= 80em) {
+  #app {
+    grid-template-columns: 51.25% 48.75%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main {
+    order: 1;
+    padding: 4rem;
+    overflow: auto;
   }
 }

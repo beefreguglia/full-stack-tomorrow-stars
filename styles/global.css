@@ -24,7 +24,6 @@
 }
 
 body {
-  overflow: hidden;
   font: var(--text);
   color: var(--text-secondary);
 }
@@ -40,6 +39,7 @@ img {
 
 .flex {
   display: flex;
+  flex-direction: column;
 }
 
 .flex-1 {
@@ -48,4 +48,23 @@ img {
 
 .flex-2 {
   flex: 2;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: block;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  
+  .flex {
+    flex-direction: row;
+  }
 }
