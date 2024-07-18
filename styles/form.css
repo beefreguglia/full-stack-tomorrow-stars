@@ -23,9 +23,9 @@ fieldset + fieldset {
   flex-direction: column;
   display: flex;
   gap: 1rem;
-  
+  align-items: center;
   & > button {
-    width: 280px;
+    width: 300px;
   }
 }
 
