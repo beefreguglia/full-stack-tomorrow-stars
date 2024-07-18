@@ -4,7 +4,6 @@ form {
 
 fieldset {
   border: none;
-
   display: grid;
   gap: 1.5rem;
 }
@@ -20,14 +19,27 @@ fieldset + fieldset {
 
 .actions-wrapper {
   margin-top: 3rem;
-
+  width: 100%;
+  flex-direction: column;
   display: flex;
   gap: 1rem;
+  
+  & > button {
+    width: 280px;
+  }
 }
 
 
 @media (width >= 80em) {
   .actions-wrapper {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+
+@media (width >= 80em) {
+  .actions-wrapper {
+    & > button {
+      width: initial;
+    }
   }
 }

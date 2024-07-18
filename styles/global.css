@@ -56,7 +56,7 @@ img {
 
 @media (width >= 80em) {
   .desktop-only {
-    display: block;
+    display: inline-block;
   }
 
   body {
